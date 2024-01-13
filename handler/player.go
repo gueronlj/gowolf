@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/gueronlj/gowolf/view/player"
+	player "github.com/gueronlj/gowolf/view"
 	"github.com/labstack/echo/v4"
 )
 
