@@ -1,0 +1,12 @@
+package player
+
+import ("github.com/gueronlj/gowolf/view/layout"
+ "github.com/gueronlj/gowolf/model")
+
+templ PlayerView(player model.Player) {
+	//this will render contents as chikldren of layout
+	@layout.Base() {
+		<h1>Hello, { player.Name }</h1>
+		<h2>You are a { player.Role }</h2>
+	} 
+}
