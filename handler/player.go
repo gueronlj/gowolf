@@ -8,5 +8,5 @@ import (
 type PlayerHandler struct{}
 
 func (h PlayerHandler) HandlePlayerView(c echo.Context) error {
-	return render(c, player.PlayerView("Luis"))
+	return render(c, player.PlayerView("Player 1"))
 }

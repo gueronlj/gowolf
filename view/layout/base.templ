@@ -1,0 +1,27 @@
+package layout
+
+templ Base() {
+    <!DOCTYPE html>
+    <htmL>
+        <head>
+            <style>
+                #header {
+                    display: flex;
+                    flex-direction: row;
+                    width: 100vw;
+                    background-color: black;
+                    color: white;
+                    align-items: center;
+                }
+            </style>
+        </head>
+        <body>
+            <div id="header">
+                <h2>This is Werewolf in Go</h2>
+                <p>This is from the default layout</p>
+            </div>
+           
+            { children... }
+        </body>
+    </htmL>
+}

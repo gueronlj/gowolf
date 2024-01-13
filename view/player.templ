@@ -1,5 +1,10 @@
 package player
 
+import "github.com/gueronlj/gowolf/view/layout"
+
 templ PlayerView(name string) {
-	<div>Hello, { name }</div>
+	//this will render contents as chikldren of layout
+	@layout.Base() {
+		<div>Hello, { name }</div>
+	} 
 }

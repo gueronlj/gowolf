@@ -9,7 +9,7 @@ func main() {
 	app := echo.New()
 
 	playerHandler := handler.PlayerHandler{ /*insert DB struct here*/ }
-	app.GET("/player", playerHandler.HandlePlayerView)
+	app.GET("/", playerHandler.HandlePlayerView)
 
 	app.Logger.Fatal(
 		app.Start(":8080"),
